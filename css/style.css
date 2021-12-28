@@ -1,0 +1,425 @@
+/* start import  */
+
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.clearfix{
+    clear: both;
+}
+body{
+    height: 3000px;
+    background-color: #F0F4F6;
+}
+:root{
+    --main-color: #202020;
+    --main-family:fangsong;
+}
+/* end import  */
+
+/* start logo-box  */
+.box-logo{
+    background-color: #F0F4F6;
+}
+.logo1{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.logo1 .logo-box{
+    width: 20%;
+    float: left;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 15px;
+    color: var(--main-color);
+    font-family: var(--main-family);
+    font-weight: bold;
+}
+.logo1 .ul {
+    width: 80%;
+    float: left;
+    list-style: none;
+    margin-top: 15px;
+}
+.logo1 .ul li {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 25px;
+    font-size: 18px;
+    opacity: 0.5;
+}
+.logo1 .ul li a{
+    text-decoration: none;
+    color: #030302;
+    font-size: 20px;
+    font-weight: bold;
+}
+.logo1 .ul li a:hover{
+    color: #cdcbdc;
+   transition: 0.4s;
+}
+
+@media(max-width:512px){
+    .logo1{
+        margin-bottom: -10px;
+    }
+}
+.logo2{
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.logo2 .icons1 i{
+    opacity: 0.5;
+    font-weight: bold;
+    top: 8px;
+    position: absolute;
+    left: 10px;
+}
+.logo2 .icons1 {
+    width: 60%;
+    float: left;
+    margin-top: 25px;
+    position: relative;
+}
+.logo2 .icons1 input{
+    width: 100%;
+    cursor: pointer;
+}
+.logo2 .icons2{
+    float: right;
+    margin-top: 25px;
+}
+.logo2 .icons2 i {
+    margin-left: 16px;
+    opacity: 0.9;
+    font-size: 18px;
+   
+}
+
+
+/* eng logo-box  */
+
+/* start box-slider  */
+
+.box-slid{
+    position: relative;
+}
+.box-slid .new {
+    position: absolute;
+    top: 32%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.box-slid .new p {
+    font-size: 100px;
+    color: #ffffffa6;
+    font-family: fangsong;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.box-slid .new button{
+font-size: 35px;
+border: none;
+background-color: var(--main-color);
+color: #FFF;
+border-radius: 40px;
+padding: 0 15px 0 15px;
+font-weight: bold;
+}
+.box-slid .new button:hover{
+    background-color: #808080;
+}
+/* end box-slider  */
+
+/* start Featured-Categories  */
+
+.Featured-Categories{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.Featured-Categories .features{
+    margin-bottom: 30px;
+    position: relative;
+}
+.Featured-Categories .features h1{
+    font-weight: bold;
+    font-family: fangsong ;
+    color: var(--main-color);
+}
+.Featured-Categories .features a{
+    right: 30px;
+    position: absolute;
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--main-family);
+    text-decoration: underline;
+}
+.Featured-Categories .features-box .box{
+    width: 24%;
+    float: left;
+    height: 240px;
+    margin-right: 1%;
+    margin-top: 10px;
+}
+.Featured-Categories .features-box .box:first-of-type{
+    background-color: #C5D3FF;
+    border-radius: 10px;
+}
+.Featured-Categories .features-box .box:nth-of-type(2){
+    background-color: #C5FFFF;
+    border-radius: 10px;
+}
+.Featured-Categories .features-box .box:nth-of-type(3){
+    background-color:#E5C5FF;
+    border-radius: 10px;
+}
+.Featured-Categories .features-box .box:last-of-type{
+    background-color: #FFC5D6;
+    border-radius: 10px;
+}
+/* end Featured-Categories  */
+
+/* start Trending Books  */
+
+.Trending-Books{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.Trending-Books .Trending h1{
+    font-weight: bold;
+    font-family: fangsong ;
+    color: var(--main-color);
+}
+.Trending-Books .Trending-box{
+    margin-top: 40px;
+}
+.Trending-Books .Trending{
+    position: relative;
+}
+.Trending-Books .Trending a{
+    right: 30px;
+    position: absolute;
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--main-family);
+    text-decoration: underline;
+}
+.Trending-Books .Trending-box .box {
+    position: relative;
+}
+.Trending-Books .Trending-box .box:first-of-type{
+    background-color: #FFF;
+    border-radius: 10px;
+    width: 24%;
+    height: 100%;
+    padding: 0;
+}
+.Trending-Books .Trending-box .box:nth-of-type(2){
+    background-color: #FFF;
+    border-radius: 10px;
+    width: 24%;
+    height: 100%;
+    padding: 0;
+}
+.Trending-Books .Trending-box .box:nth-of-type(3){
+    background-color:#FFF;
+    border-radius: 10px;
+    width: 24%;
+    height: 100%;
+    padding: 0;
+}
+.Trending-Books .Trending-box .box:last-of-type{
+    background-color: #FFF;
+    border-radius: 10px;
+    width: 24%;
+    height: 100%;
+    padding: 0;
+}
+.Trending-Books .Trending-box .box img{
+    width: 100%;
+    background-size: cover;
+    border-radius: 10px;
+}
+.Trending-Books .Trending-box .box .over{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 69%;
+    background-color: #00000061;
+    border-radius: 10px;
+    display: none;
+    /* transition: all 3s ease-in-out; */
+}
+.Trending-Books .Trending-box .box:hover .over{
+    display: block;
+    transition: all 3s ease-in-out;
+}
+.Trending-Books .Trending-box .box .over span {
+    color: #FFF;
+    font-size: 25px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
+.Trending-Books .Trending-box .box .book{
+    margin: 5px 0 5px 0;
+}
+.Trending-Books .Trending-box .box .book h4{
+    width: 90%;
+    float: left;
+    color: var(--main-color);
+    opacity: 0.9;
+}
+.Trending-Books .Trending-box .box .book span{
+    font-size: 15px;
+    opacity: 0.7;
+}
+.Trending-Books .Trending-box .box button{
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #45f6459c;
+}
+
+/* end Trending Books  */
+
+/* start new-over  */
+.new-over {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.new-over h3{
+    position: absolute;
+    z-index: 1;
+    font-size: 50px;
+    top: 5%;
+    left: 40%;
+    color: #FFF;
+}
+
+/* end new-over  */
+
+
+/* start contact-us  */
+
+.contact{
+    min-height: 600px;
+    background-image: url('../img/don4.jpg');
+    background-size: cover;
+   padding-top: 80px;
+   padding-bottom: 80px;
+   position: relative;
+}
+.contact .overlay{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+}
+.contact h2 {
+    z-index: 2;
+    color:var(--main-color);
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0 0 60px;
+    text-align: center;
+}
+.contact form{
+    overflow: hidden;
+    max-width: 800px;
+    margin: auto;
+}
+.contact form .left{
+   float: left;
+   width: 49%;
+}
+.contact form .right{
+    width: 49%;
+    float: right;;
+}
+.contact form  input:not([type="submit"]),
+.contact form  textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #CCC;
+    background-color: rgba(218, 218, 218, 218.19);
+}
+.contact form  input:not([type="submit"]):focus,
+.contact form  textarea:focus {
+    outline: 1px solid var(--main-color);
+}
+.contact form input {
+    height: 40px;
+}
+.contact form textarea {
+    height: 150px;
+}
+.contact form  input[type="submit"]{
+   font-size: 24px;
+    width: 100%;
+    border-color: transparent;
+    background-color: var(--main-color);
+    color: #FFF;
+    cursor: pointer;
+}
+.contact form textarea:focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: 0.4s;
+}
+@media(max-width:767px){
+    .contact form .left,
+    .contact form .right{
+        float: none;
+        width:100%;
+    }
+}
+/* end contact-us  */
+
+/* start media  */
+
+@media(max-width:767px){
+    .logo2 {
+        margin-bottom: 30px;
+    }
+    .box-slid .new {
+        text-align: center;
+    }
+    .box-slid .new p{
+        font-size: 50px;
+    }
+    .box-slid .new button{
+        font-size: 25px;
+    }
+    .Featured-Categories .features h1{
+        text-align: center;
+    }
+    .Featured-Categories .features a{
+        text-align: center;
+        right: 0;
+        left: 0;
+    }
+    .Featured-Categories .features-box .box{
+        float: none;
+        width: 100%;
+    }
+    .Trending-Books .Trending-box .box .col-lg-3 {
+        width: 100%;
+    }
+}
+
+/* end media  */
